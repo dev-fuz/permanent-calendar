@@ -77,7 +77,7 @@ export default {
     methods: {
         getWeekDay(cal) {
            let day = new Date(this.year, cal.month_id, cal.day).getDay();
-           return this.weekday[day]
+           return this.weekday[day - 2]
         },
         getMonthId(cal) {
             //compare if single digit or double digit
@@ -91,7 +91,7 @@ export default {
                 return 'indigo-lighten-3'
             }
             return 'indigo-lighten-5'
-        }
+        },
     },
 }
 </script>

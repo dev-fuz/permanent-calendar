@@ -23,13 +23,32 @@ const routes = [
       {
         path: '',
         name: 'Doa',
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
         component: () => import(/* webpackChunkName: "home" */ '@/views/DoaView.vue'),
       },
     ],
   },
+  {
+    path: '/hadith',
+    component: () => import('@/layouts/default/Default.vue'),
+    children: [
+      {
+        path: '',
+        name: 'hadith',
+        component: () => import(/* webpackChunkName: "home" */ '@/views/HadithView.vue'),
+      },
+    ],
+  },
+  {
+    path: '/quran',
+    component: () => import('@/layouts/default/Default.vue'),
+    children: [
+      {
+        path: '',
+        name: 'quran',
+        component: () => import('@/views/QuranView.vue'),
+      },
+    ],
+  }
 ]
 
 const router = createRouter({
