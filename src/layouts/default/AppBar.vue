@@ -42,20 +42,20 @@
       group: null,
       items: [
         {
-          title: 'Doa',
-          value: 'doa',
-          to: '/doa',
+          title: 'Quran',
+          value: 'quran',
+          to: '/quran',
         },
         {
           title: 'Hadith',
           value: 'hadith',
           to: '/hadith',
         },
-        // {
-        //   title: 'About',
-        //   value: 'about',
-        //   to: '/about',
-        // },
+        {
+          title: 'Doa',
+          value: 'doa',
+          to: '/doa',
+        },
         // {
         //   title: 'Contact',
         //   value: 'contact',
